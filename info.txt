@@ -1,0 +1,21 @@
+Creamos una carpeta que va a ser la que almacena nuestro proyecto
+
+entramos a esa carpeta
+
+ahí creamos un ambiembte virtual para instalar python y paquetes ' python -m venv venv'
+
+activamos en venv ' . venv/bin/activate'
+
+instalamos django dentro del ambiente virtual 'pip install django'
+
+sacamos el manage.py y la carpeta de django a la altura de nuestra carpeta principal.
+
+instalamos git 'git init'
+
+creamos la base de datos con 'python manage.py migrate'
+
+Levantamos el servidor con 'python manage.py runserver'
+
+
+creamos un archivo .gitignore y escribimos 'venv' y '__pycache__' para evitar subir los cambios y que se le copien a otros.
+
