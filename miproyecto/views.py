@@ -1,9 +1,12 @@
 from django.http import HttpResponse
+from django.shortcuts import render
+
 
 def inicio(request):
     return HttpResponse("Hola, soy la pagina de inicio")
 
 def otra_vista(request):
+    
     return HttpResponse("""
                         !DOCTYPE html>
 <html>
@@ -51,3 +54,6 @@ def otra_vista(request):
 </footer>
 </html>
                         """)
+    
+def clase(request):
+    return render(request, )
