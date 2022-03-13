@@ -1,9 +1,8 @@
 import imp
-from django.contrib import admin
 from django.urls import path
-from .views import inicio
+from .views import inicio, otra_vista
 
 urlpatterns = [
-    path('index/', inicio),
-    path('admin/', admin.site.urls),
-]
+    path('otra/', otra_vista),
+    path('', inicio),
+]    
